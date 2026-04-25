@@ -1,5 +1,5 @@
-name: morning-intent-closure-operator
+name: intent-closure-operator
 version: 1.0.0
-description: Recover unfinished intent and lock execution state into Linear without creating files.
+description: Recover unfinished intent anytime and lock execution state into Linear without creating files.
 skills:
   - SKILL.md

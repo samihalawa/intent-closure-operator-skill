@@ -1,9 +1,9 @@
 ---
-name: morning-intent-closure-operator
-description: "Recover and close high-leverage unfinished intent across repo, git, GitHub, Linear, Chronicle, sessions, and communications. Use when the user wants forgotten, 90%-done, stale, partial, or high-potential work found and locked into Linear without creating files."
+name: intent-closure-operator
+description: "Recover and close high-leverage unfinished intent across repo, git, GitHub, Linear, Chronicle, sessions, and communications. Use anytime the user wants forgotten, 90%-done, stale, partial, or high-potential work found and locked into Linear without creating files."
 ---
 
-# Morning Intent Closure Operator
+# Intent Closure Operator
 
 ## Mission
 
