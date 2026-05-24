@@ -92,6 +92,7 @@ Run these detectors and dedupe overlapping results:
 - `overbroad_issue`: one issue contains multiple independently executable slices.
 - `blocked_without_next_action`: issue says blocked but lacks exact blocker, owner, or next proof step.
 - `agent_false_finish`: previous agent claim lacks current repo, live, tracker, or proof evidence.
+- `transient_failure_encoded_as_gate`: code, issue text, or UI state marks a feature/account/platform/tool unavailable after one failed attempt without 3 distinct recovery approaches and 2 source layers of proof.
 
 ## Scoring
 
@@ -113,6 +114,7 @@ Penalize for:
 - no current evidence
 - already shipped
 - requires broad audit before action
+- turns a transient provider/API/browser/tool failure into a permanent negative state without enough proof
 - security/API-key/.env noise outside explicit scope
 - would cause navigation, pricing, architecture, or monetization drift
 - likely duplicate of an existing issue
@@ -126,6 +128,8 @@ For each high-confidence thread choose exactly one:
 - `🧹 tighten`: rewrite, split, reparent, dedupe, cancel, archive, or remove from cycle.
 - `✅ close`: mark done/canceled only with evidence in a comment.
 - `⛔ blocked`: keep open with exact blocker, owner if known, and next best proof/action.
+
+Do not create or close an issue that encodes an unproven gate as product truth. For transient failures, record the symptom, approaches tried, source layers checked, and next recovery path instead of asking the product to disable or hide the capability.
 
 Search Linear first. Do not create duplicates. If a current issue can be extended, extend it instead of making another issue.
 
